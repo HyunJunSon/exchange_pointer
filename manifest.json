@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Exchange Rate Pointer",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"]
+}
